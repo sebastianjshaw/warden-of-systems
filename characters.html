@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Characters - Warden of Systems</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="wardrobe-nav">
+        <div class="wardrobe-nav-container">
+            <a href="index.html" class="wardrobe-nav-logo">Warden of Systems</a>
+            <div class="wardrobe-nav-menu">
+                <a href="index.html" class="wardrobe-nav-link">Home</a>
+                <a href="chapters.html" class="wardrobe-nav-link">Chapters</a>
+                <a href="characters.html" class="wardrobe-nav-link wardrobe-nav-active">Characters</a>
+            </div>
+            <div class="wardrobe-nav-toggle">
+                <span class="wardrobe-nav-bar"></span>
+                <span class="wardrobe-nav-bar"></span>
+                <span class="wardrobe-nav-bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="wardrobe-main">
+        <section class="wardrobe-characters-header">
+            <div class="wardrobe-container">
+                <h1 class="wardrobe-page-title">Characters</h1>
+                <p class="wardrobe-page-subtitle">Meet the heroes and legends of the Warden of Systems</p>
+            </div>
+        </section>
+
+        <section class="wardrobe-characters-list">
+            <div class="wardrobe-container">
+                <div class="wardrobe-characters-grid">
+                    <div class="wardrobe-character-card" onclick="openCharacterModal('protagonist')">
+                        <div class="wardrobe-character-thumbnail">
+                            <img src="images/character-protagonist.jpg" alt="The Protagonist" class="wardrobe-character-thumb-img">
+                        </div>
+                        <div class="wardrobe-character-info">
+                            <h3 class="wardrobe-character-name">The Warden</h3>
+                            <p class="wardrobe-character-role">Protagonist</p>
+                            <p class="wardrobe-character-description">Summoned from their ordinary life into a world of magic and mystery. Classed up by isekai mechanics, they must learn to navigate ancient powers and save the world.</p>
+                        </div>
+                    </div>
+
+                    <div class="wardrobe-character-card" onclick="openCharacterModal('merlin')">
+                        <div class="wardrobe-character-thumbnail">
+                            <img src="images/character-merlin.jpg" alt="Merlin" class="wardrobe-character-thumb-img">
+                        </div>
+                        <div class="wardrobe-character-info">
+                            <h3 class="wardrobe-character-name">Merlin</h3>
+                            <p class="wardrobe-character-role">Loyal Companion</p>
+                            <p class="wardrobe-character-description">Upgraded but still your faithful dog. Transformed by the summoning circle, Merlin now possesses incredible magical abilities while maintaining his loyal nature.</p>
+                        </div>
+                    </div>
+
+                    <div class="wardrobe-character-card wardrobe-character-upcoming">
+                        <div class="wardrobe-character-thumbnail">
+                            <div class="wardrobe-character-placeholder">
+                                <span class="wardrobe-character-placeholder-text">Coming Soon</span>
+                            </div>
+                        </div>
+                        <div class="wardrobe-character-info">
+                            <h3 class="wardrobe-character-name">The Summoner</h3>
+                            <p class="wardrobe-character-role">Mysterious Figure</p>
+                            <p class="wardrobe-character-description">The robed figure who orchestrated the summoning circle. Their true motives and identity remain shrouded in mystery.</p>
+                        </div>
+                    </div>
+
+                    <div class="wardrobe-character-card wardrobe-character-upcoming">
+                        <div class="wardrobe-character-thumbnail">
+                            <div class="wardrobe-character-placeholder">
+                                <span class="wardrobe-character-placeholder-text">Coming Soon</span>
+                            </div>
+                        </div>
+                        <div class="wardrobe-character-info">
+                            <h3 class="wardrobe-character-name">The Guardian</h3>
+                            <p class="wardrobe-character-role">Ancient Protector</p>
+                            <p class="wardrobe-character-description">An ancient being who watches over the magical systems of this realm. Their guidance will be crucial in understanding the true nature of your role.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="wardrobe-character-info">
+            <div class="wardrobe-container">
+                <div class="wardrobe-info-card">
+                    <h2>Character Development</h2>
+                    <p>Characters in Warden of Systems grow organically throughout the story. Starting as a duo, the protagonist and Merlin will encounter new allies and face formidable foes as they navigate the magical realm.</p>
+                    <p>Each character brings unique perspectives to the hard magic system, contributing to the epic scope of this Arthurian-inspired fantasy.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Character Modals -->
+    <div id="wardrobe-character-modal-protagonist" class="wardrobe-character-modal">
+        <div class="wardrobe-modal-content">
+            <span class="wardrobe-modal-close" onclick="closeCharacterModal('protagonist')">&times;</span>
+            <div class="wardrobe-modal-header">
+                <img src="images/character-protagonist.jpg" alt="The Protagonist" class="wardrobe-modal-image">
+                <div class="wardrobe-modal-info">
+                    <h2>The Warden</h2>
+                    <p class="wardrobe-modal-role">Protagonist</p>
+                </div>
+            </div>
+            <div class="wardrobe-modal-body">
+                <h3>Background</h3>
+                <p>Summoned from their ordinary life into a world where Arthurian legends collide with hard magic systems. The protagonist must quickly adapt to their new role as the Warden of Systems, learning to master arcane powers while maintaining their humanity.</p>
+                
+                <h3>Abilities</h3>
+                <p>Enhanced by isekai mechanics, the protagonist gains access to magical abilities that can be studied and mastered. Their connection to Merlin provides additional power and insight into the magical realm.</p>
+                
+                <h3>Role in the Story</h3>
+                <p>As the central character, the protagonist serves as the reader's gateway into this magical world. Their journey from ordinary person to powerful Warden drives the narrative forward.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="wardrobe-character-modal-merlin" class="wardrobe-character-modal">
+        <div class="wardrobe-modal-content">
+            <span class="wardrobe-modal-close" onclick="closeCharacterModal('merlin')">&times;</span>
+            <div class="wardrobe-modal-header">
+                <img src="images/character-merlin.jpg" alt="Merlin" class="wardrobe-modal-image">
+                <div class="wardrobe-modal-info">
+                    <h2>Merlin</h2>
+                    <p class="wardrobe-modal-role">Loyal Companion</p>
+                </div>
+            </div>
+            <div class="wardrobe-modal-body">
+                <h3>Background</h3>
+                <p>Originally the protagonist's faithful dog, Merlin was transformed during the summoning circle. His frame swelled, his chest blazed white, and his eyes burned pale blue as he gained incredible magical abilities.</p>
+                
+                <h3>Abilities</h3>
+                <p>Merlin now stands tall as a horse with spectral mist curling around him. His roar can shake chambers, and his magical presence can break summoning circles. Despite his transformation, he remains fiercely loyal to his companion.</p>
+                
+                <h3>Role in the Story</h3>
+                <p>Merlin serves as both protector and guide, using his enhanced abilities to help the protagonist navigate the dangers of the magical realm. His transformation represents the bridge between the ordinary world and the magical one.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="wardrobe-footer">
+        <div class="wardrobe-container">
+            <p>&copy; 2024 Warden of Systems. An epic fantasy serial.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
