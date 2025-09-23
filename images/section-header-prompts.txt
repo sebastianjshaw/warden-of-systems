@@ -1,0 +1,71 @@
+# Section Header Background Image Prompts
+
+## Background Images for Chapters and Characters Headers
+
+### **Image Specifications:**
+- **Format**: PNG (high quality)
+- **Dimensions**: 1920x400px (16:3.3 landscape - wider than hero)
+- **Usage**: Background images behind gradient overlays
+- **Style**: Fantasy art, atmospheric, complementary to index background
+
+---
+
+## CHAPTERS HEADER BACKGROUND PROMPT
+
+### **File Name**: `chapters-header.png`
+
+**"A mystical library or archive scene for a fantasy story chapters page. The view shows towering shelves of ancient tomes stretching into shadowy heights, their leather-bound spines glowing with faint runic inscriptions. Dust motes drift through shafts of golden light streaming from high windows. In the foreground, an ornate reading desk holds an open book with pages that seem to shimmer with inner light, revealing glimpses of magical symbols and maps.**
+
+**The atmosphere is scholarly yet magical - cobwebs catch the light like silver threads, and floating candles provide warm illumination. Ancient scrolls and quills are scattered about, suggesting ongoing study of arcane knowledge. The color palette emphasizes deep browns, warm golds, and rich burgundy tones with subtle magical glows.**
+
+**The composition should feel expansive and inviting, suggesting the vast collection of stories and knowledge contained within. The lighting should be dramatic but not overwhelming, with the most interesting elements positioned to frame text content rather than compete with it.**
+
+**Style: High fantasy digital art, photorealistic with magical elements, atmospheric lighting, scholarly and mystical atmosphere, suitable for web background use."**
+
+### **Alternative Shorter Prompt:**
+**"Mystical library with towering shelves of ancient glowing tomes, golden light streaming through windows, ornate reading desk with shimmering open book, floating candles and magical scrolls. Deep browns, warm golds, and burgundy tones with subtle magical glows. Scholarly yet magical atmosphere. High fantasy digital art, atmospheric lighting."**
+
+---
+
+## CHARACTERS HEADER BACKGROUND PROMPT
+
+### **File Name**: `characters-header.png`
+
+**"A grand hall or gathering place where legendary figures might convene. The scene shows an ancient stone chamber with high vaulted ceilings, illuminated by floating orbs of soft light. Stone pillars carved with intricate reliefs line the walls, depicting various heroic figures and mythical creatures. In the center, a circular dais or platform suggests a place where important figures might stand or be honored.**
+
+**The atmosphere is regal and mysterious - banners hang from the walls bearing heraldic symbols, and the stone floor is inlaid with a complex geometric pattern that seems to pulse with faint energy. Shadows dance in the corners, suggesting hidden depths and secrets. The color palette emphasizes cool stone grays, deep blues, and silver accents with warm golden highlights.**
+
+**The composition should feel both intimate and grand, suggesting a place where heroes and legends are remembered and honored. The lighting should be dramatic but not overwhelming, with the most interesting elements positioned to frame text content rather than compete with it.**
+
+**Style: High fantasy digital art, photorealistic with magical elements, atmospheric lighting, regal and mystical atmosphere, suitable for web background use."**
+
+### **Alternative Shorter Prompt:**
+**"Ancient stone hall with vaulted ceilings, floating light orbs, carved pillars with heroic reliefs, circular dais platform, heraldic banners, geometric floor pattern with faint energy. Cool stone grays, deep blues, and silver with golden highlights. Regal and mystical atmosphere. High fantasy digital art, atmospheric lighting."**
+
+---
+
+## Technical Notes
+
+### **Design Considerations:**
+- Images should complement the existing dark gradient overlays
+- Avoid overly bright or busy areas where text will appear
+- Consider the existing color scheme (dark blues/grays with gold accents)
+- Ensure good contrast for white text overlay
+- Images should feel cohesive with the index background
+
+### **Gradient Integration:**
+- Current gradient: `linear-gradient(135deg, #2c3e50 0%, #34495e 100%)`
+- Images will appear behind this semi-transparent overlay
+- Consider how the image colors will blend with the dark gradient
+- Warm tones (library) and cool tones (hall) will create different moods
+
+### **Layout Considerations:**
+- Headers are smaller than hero section (8rem padding vs 100vh)
+- Images should work well at this compressed height
+- Horizontal elements work better than vertical for this aspect ratio
+- Consider how the image will look when cropped to header height
+
+### **File Naming:**
+- `chapters-header.png` - For chapters page header
+- `characters-header.png` - For characters page header
+- Both should be 1920x400px for optimal display

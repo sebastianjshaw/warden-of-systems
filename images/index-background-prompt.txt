@@ -1,0 +1,44 @@
+# Index Page Background Image Prompt
+
+## Hero Section Background for Warden of Systems
+
+### **Image Specifications:**
+- **Format**: PNG (high quality)
+- **Dimensions**: 1920x1080px (16:9 landscape)
+- **Usage**: Background image behind title and floating runes animation
+- **Style**: Fantasy art, atmospheric, not too busy
+
+### **Detailed Prompt:**
+
+**"A mystical fantasy landscape background for a website hero section. The scene shows a vast, otherworldly realm where ancient magic and technology intertwine. In the foreground, weathered stone ruins emerge from misty ground, their surfaces carved with glowing runic symbols that pulse with inner light. The ruins form a partial circle or arc, suggesting the remnants of an ancient summoning circle or portal.**
+
+**The middle ground features rolling hills covered in strange, luminescent vegetation - trees with bark like polished metal and leaves that shimmer like crystal. Distant mountains rise against a sky that transitions from deep violet at the horizon to swirling bands of emerald and gold higher up, as if the heavens themselves are alive with magical energy.**
+
+**Floating particles of light drift through the air like ethereal fireflies, and subtle energy currents are visible as faint streams of light connecting various points in the landscape. The overall atmosphere is mysterious yet inviting, suggesting both ancient power and new possibilities.**
+
+**The lighting is dramatic but not overwhelming - soft glows from the runes and vegetation provide gentle illumination against the darker, more mysterious areas. The color palette emphasizes deep purples, blues, and greens with golden accents, creating a sense of magic and wonder.**
+
+**The composition should leave space in the center-left area where text and UI elements will be overlaid, with the most interesting visual elements positioned to frame rather than compete with the content. The image should feel expansive and immersive, drawing viewers into the world of the story.**
+
+**Style: High fantasy digital art, photorealistic with magical elements, cinematic composition, atmospheric lighting, suitable for web background use."**
+
+### **Alternative Shorter Prompt:**
+
+**"Mystical fantasy landscape with ancient stone ruins carved with glowing runes, luminescent crystal trees, distant mountains, and a sky of swirling violet and emerald light. Floating particles of magical energy drift through the scene. Deep purple, blue, and green color palette with golden accents. Cinematic composition with space for text overlay. High fantasy digital art, atmospheric and immersive."**
+
+### **Key Elements to Include:**
+- Ancient stone ruins with glowing runes
+- Luminescent vegetation (crystal trees, glowing plants)
+- Distant mountains
+- Swirling, magical sky (violet, emerald, gold)
+- Floating light particles
+- Mystical atmosphere
+- Space for text overlay
+- Deep, rich color palette
+
+### **Technical Notes:**
+- Image should be subtle enough not to interfere with text readability
+- Consider adding a subtle dark overlay or vignette effect
+- Ensure good contrast for white text overlay
+- Avoid overly bright or busy areas in the center-left where text will appear
+- The image should complement the existing gradient background rather than replace it entirely

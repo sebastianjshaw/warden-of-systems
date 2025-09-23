@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Image Display Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #1a1a1a;
+            color: white;
+            padding: 20px;
+        }
+        
+        .test-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .test-card {
+            background: transparent;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0;
+        }
+        
+        .test-thumbnail {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 100%; /* 1:1 Aspect Ratio */
+            overflow: hidden;
+            background: transparent;
+            min-height: 200px;
+            max-height: 300px;
+            aspect-ratio: 1; /* Modern browsers */
+        }
+        
+        .test-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+            background: transparent;
+            border-radius: 10px 10px 0 0;
+        }
+        
+        .test-info {
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+        
+        .test-name {
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+        
+        .test-role {
+            color: #f39c12;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .test-description {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .status {
+            background: #27ae60;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            text-align: center;
+        }
+        
+        .error {
+            background: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>Character Image Display Test</h1>
+        
+        <div class="status" id="status">
+            Testing character image display...
+        </div>
+        
+        <div class="test-card">
+            <div class="test-thumbnail">
+                <img src="character-protagonist.png" alt="The Protagonist" class="test-image" id="testImage">
+            </div>
+            <div class="test-info">
+                <h3 class="test-name">The Warden</h3>
+                <p class="test-role">Protagonist</p>
+                <p class="test-description">This is a test of the character image display. The image should be square and fill the container properly without any white overlay or flickering.</p>
+            </div>
+        </div>
+        
+        <div class="test-card">
+            <div class="test-thumbnail">
+                <img src="character-merlin.png" alt="Merlin" class="test-image" id="testMerlinImage">
+            </div>
+            <div class="test-info">
+                <h3 class="test-name">Merlin</h3>
+                <p class="test-role">Loyal Companion</p>
+                <p class="test-description">This is Merlin's new PNG profile image. It should display as a square image with proper aspect ratio.</p>
+            </div>
+        </div>
+        
+        <div class="test-card">
+            <div class="test-thumbnail">
+                <img src="character-elira.png" alt="Elira" class="test-image" id="testEliraImage">
+            </div>
+            <div class="test-info">
+                <h3 class="test-name">Elira</h3>
+                <p class="test-role">Herbalist & Guide</p>
+                <p class="test-description">This is Elira's new PNG profile image. It should display as a square image with proper aspect ratio.</p>
+            </div>
+        </div>
+        
+        <div class="test-card">
+            <div class="test-thumbnail">
+                <img src="character-caller.png" alt="The Caller" class="test-image" id="testCallerImage">
+            </div>
+            <div class="test-info">
+                <h3 class="test-name">The Caller</h3>
+                <p class="test-role">Antagonist</p>
+                <p class="test-description">This is The Caller's new PNG profile image. It should display as a square image with proper aspect ratio.</p>
+            </div>
+        </div>
+        
+        <div class="test-card">
+            <div class="test-thumbnail">
+                <img src="character-tov.png" alt="Tov" class="test-image" id="testTovImage">
+            </div>
+            <div class="test-info">
+                <h3 class="test-name">Tov</h3>
+                <p class="test-role">Thief & Informant</p>
+                <p class="test-description">This is Tov's new PNG profile image. It should display as a square image with proper aspect ratio.</p>
+            </div>
+        </div>
+        
+        <div class="test-card">
+            <div class="test-thumbnail">
+                <img src="character-first-weavers.png" alt="First Weavers" class="test-image" id="testWeaversImage">
+            </div>
+            <div class="test-info">
+                <h3 class="test-name">First Weavers</h3>
+                <p class="test-role">Ancient Builders</p>
+                <p class="test-description">This is The First Weavers' new PNG profile image. It should display as a square image with proper aspect ratio.</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const testImage = document.getElementById('testImage');
+            const testMerlinImage = document.getElementById('testMerlinImage');
+            const testEliraImage = document.getElementById('testEliraImage');
+            const testCallerImage = document.getElementById('testCallerImage');
+            const testTovImage = document.getElementById('testTovImage');
+            const testWeaversImage = document.getElementById('testWeaversImage');
+            const status = document.getElementById('status');
+            
+            let loadedImages = 0;
+            const totalImages = 6;
+            
+            function updateStatus() {
+                loadedImages++;
+                if (loadedImages === totalImages) {
+                    status.textContent = '✅ All PNG images loaded successfully!';
+                    status.className = 'status';
+                } else if (loadedImages === 1) {
+                    status.textContent = '✅ PNG images loading...';
+                    status.className = 'status';
+                }
+            }
+            
+            function handleImageLoad(img) {
+                img.addEventListener('load', function() {
+                    updateStatus();
+                });
+                
+                img.addEventListener('error', function() {
+                    status.textContent = '❌ PNG image failed to load. Check file path.';
+                    status.className = 'status error';
+                });
+                
+                // Check if image is already loaded
+                if (img.complete && img.naturalHeight !== 0) {
+                    updateStatus();
+                }
+            }
+            
+            handleImageLoad(testImage);
+            handleImageLoad(testMerlinImage);
+            handleImageLoad(testEliraImage);
+            handleImageLoad(testCallerImage);
+            handleImageLoad(testTovImage);
+            handleImageLoad(testWeaversImage);
+        });
+    </script>
+</body>
+</html>

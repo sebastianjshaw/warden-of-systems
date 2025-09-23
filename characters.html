@@ -37,49 +37,67 @@
                 <div class="wardrobe-characters-grid">
                     <div class="wardrobe-character-card" onclick="openCharacterModal('protagonist')">
                         <div class="wardrobe-character-thumbnail">
-                            <img src="images/character-protagonist.jpg" alt="The Protagonist" class="wardrobe-character-thumb-img">
+                            <img src="images/character-protagonist.png" alt="The Protagonist" class="wardrobe-character-thumb-img">
                         </div>
                         <div class="wardrobe-character-info">
                             <h3 class="wardrobe-character-name">The Warden</h3>
                             <p class="wardrobe-character-role">Protagonist</p>
-                            <p class="wardrobe-character-description">Summoned from their ordinary life into a world of magic and mystery. Classed up by isekai mechanics, they must learn to navigate ancient powers and save the world.</p>
+                            <p class="wardrobe-character-description">Summoned from Avalon Farm into a world of ancient magic. Possesses the ability to see and manipulate the world's underlying balance—lines and threads of power that connect everything. Wields Excalibur and has crossed the moral line of killing to protect those he loves.</p>
                         </div>
                     </div>
 
                     <div class="wardrobe-character-card" onclick="openCharacterModal('merlin')">
                         <div class="wardrobe-character-thumbnail">
-                            <img src="images/character-merlin.jpg" alt="Merlin" class="wardrobe-character-thumb-img">
+                            <img src="images/character-merlin.png" alt="Merlin" class="wardrobe-character-thumb-img">
                         </div>
                         <div class="wardrobe-character-info">
                             <h3 class="wardrobe-character-name">Merlin</h3>
                             <p class="wardrobe-character-role">Loyal Companion</p>
-                            <p class="wardrobe-character-description">Upgraded but still your faithful dog. Transformed by the summoning circle, Merlin now possesses incredible magical abilities while maintaining his loyal nature.</p>
+                            <p class="wardrobe-character-description">Originally a faithful dog, transformed by the summoning circle into a magical being. Can swell to horse-size with glowing chest and spectral mist. Fiercely protective, he has saved his companion multiple times and shares a deep magical bond.</p>
                         </div>
                     </div>
 
-                    <div class="wardrobe-character-card wardrobe-character-upcoming">
+                    <div class="wardrobe-character-card" onclick="openCharacterModal('elira')">
                         <div class="wardrobe-character-thumbnail">
-                            <div class="wardrobe-character-placeholder">
-                                <span class="wardrobe-character-placeholder-text">Coming Soon</span>
-                            </div>
+                            <img src="images/character-elira.png" alt="Elira" class="wardrobe-character-thumb-img">
                         </div>
                         <div class="wardrobe-character-info">
-                            <h3 class="wardrobe-character-name">The Summoner</h3>
-                            <p class="wardrobe-character-role">Mysterious Figure</p>
-                            <p class="wardrobe-character-description">The robed figure who orchestrated the summoning circle. Their true motives and identity remain shrouded in mystery.</p>
+                            <h3 class="wardrobe-character-name">Elira</h3>
+                            <p class="wardrobe-character-role">Herbalist & Guide</p>
+                            <p class="wardrobe-character-description">A knowledgeable herbalist and trader who knows the ancient history of the First Weavers. Uses shimmering dust as a weapon and understands the true nature of relics. Chose to stay with the group despite the danger, recognizing their potential to "tilt the world."</p>
                         </div>
                     </div>
 
-                    <div class="wardrobe-character-card wardrobe-character-upcoming">
+                    <div class="wardrobe-character-card" onclick="openCharacterModal('caller')">
                         <div class="wardrobe-character-thumbnail">
-                            <div class="wardrobe-character-placeholder">
-                                <span class="wardrobe-character-placeholder-text">Coming Soon</span>
-                            </div>
+                            <img src="images/character-caller.png" alt="The Caller" class="wardrobe-character-thumb-img">
                         </div>
                         <div class="wardrobe-character-info">
-                            <h3 class="wardrobe-character-name">The Guardian</h3>
-                            <p class="wardrobe-character-role">Ancient Protector</p>
-                            <p class="wardrobe-character-description">An ancient being who watches over the magical systems of this realm. Their guidance will be crucial in understanding the true nature of your role.</p>
+                            <h3 class="wardrobe-character-name">The Caller</h3>
+                            <p class="wardrobe-character-role">Antagonist</p>
+                            <p class="wardrobe-character-description">Claims to be "the last Weaver" and hoards relics while claiming they're dangerous. His scouts hunt the protagonist systematically. Possesses the same magical sight as the protagonist but uses it for control and oppression rather than understanding.</p>
+                        </div>
+                    </div>
+
+                    <div class="wardrobe-character-card" onclick="openCharacterModal('tov')">
+                        <div class="wardrobe-character-thumbnail">
+                            <img src="images/character-tov.png" alt="Tov" class="wardrobe-character-thumb-img">
+                        </div>
+                        <div class="wardrobe-character-info">
+                            <h3 class="wardrobe-character-name">Tov</h3>
+                            <p class="wardrobe-character-role">Thief & Informant</p>
+                            <p class="wardrobe-character-description">A wiry young thief in the bandit camp who befriended the protagonist. Claims to be the "best thief in the camp" and "worst cook." Provided crucial information about the camp's internal tensions and the Caller's system of dues and control.</p>
+                        </div>
+                    </div>
+
+                    <div class="wardrobe-character-card" onclick="openCharacterModal('first-weavers')">
+                        <div class="wardrobe-character-thumbnail">
+                            <img src="images/character-first-weavers.png" alt="The First Weavers" class="wardrobe-character-thumb-img">
+                        </div>
+                        <div class="wardrobe-character-info">
+                            <h3 class="wardrobe-character-name">The First Weavers</h3>
+                            <p class="wardrobe-character-role">Ancient Builders</p>
+                            <p class="wardrobe-character-description">Ancient beings who "saw the world's bones" and tried to hold power in their hands. Built the temples, created relics, shaped rivers, and spoke with storms. Their fate is unknown—some say they succeeded, others say it broke them and scattered them like ash.</p>
                         </div>
                     </div>
                 </div>
@@ -90,8 +108,9 @@
             <div class="wardrobe-container">
                 <div class="wardrobe-info-card">
                     <h2>Character Development</h2>
-                    <p>Characters in Warden of Systems grow organically throughout the story. Starting as a duo, the protagonist and Merlin will encounter new allies and face formidable foes as they navigate the magical realm.</p>
-                    <p>Each character brings unique perspectives to the hard magic system, contributing to the epic scope of this Arthurian-inspired fantasy.</p>
+                    <p>Characters in Warden of Systems grow organically throughout the story. Starting as a duo, the protagonist and Merlin have encountered new allies like Elira and faced formidable foes like the Caller as they navigate the magical realm.</p>
+                    <p>Each character brings unique perspectives to the hard magic system, from the protagonist's awakening magical sight to Merlin's transformation, Elira's knowledge of ancient history, and the Caller's corruption of power. The story explores themes of loyalty, sacrifice, and the moral weight of wielding magical abilities.</p>
+                    <p>Through 36 chapters, we've seen characters evolve from their initial states—the protagonist from ordinary person to someone who has crossed the line of killing, Merlin from simple dog to magical guardian, and Elira from cautious trader to committed ally in the fight against oppression.</p>
                 </div>
             </div>
         </section>
@@ -102,7 +121,7 @@
         <div class="wardrobe-modal-content">
             <span class="wardrobe-modal-close" onclick="closeCharacterModal('protagonist')">&times;</span>
             <div class="wardrobe-modal-header">
-                <img src="images/character-protagonist.jpg" alt="The Protagonist" class="wardrobe-modal-image">
+                <img src="images/character-protagonist.png" alt="The Protagonist" class="wardrobe-modal-image">
                 <div class="wardrobe-modal-info">
                     <h2>The Warden</h2>
                     <p class="wardrobe-modal-role">Protagonist</p>
@@ -110,13 +129,16 @@
             </div>
             <div class="wardrobe-modal-body">
                 <h3>Background</h3>
-                <p>Summoned from their ordinary life into a world where Arthurian legends collide with hard magic systems. The protagonist must quickly adapt to their new role as the Warden of Systems, learning to master arcane powers while maintaining their humanity.</p>
+                <p>Summoned from Avalon Farm into a world where Arthurian legends collide with hard magic systems. The protagonist was living an ordinary life with their dog Merlin when robed figures dragged them through a summoning circle into a realm of ancient magic and danger.</p>
                 
                 <h3>Abilities</h3>
-                <p>Enhanced by isekai mechanics, the protagonist gains access to magical abilities that can be studied and mastered. Their connection to Merlin provides additional power and insight into the magical realm.</p>
+                <p>Possesses the ability to see and manipulate the world's underlying balance—lines and threads of power that connect everything. Can pull on these threads to affect balance, break structures, and enhance combat. Wields Excalibur, the legendary sword pulled from stone. Has crossed the moral line of killing to protect those he loves.</p>
+                
+                <h3>Character Development</h3>
+                <p>Has evolved from an ordinary person to someone who can consciously use magical powers. Struggles with the moral weight of killing while understanding the necessity of survival. Deeply protective of Merlin and willing to bear the burden of violence to keep his companion safe.</p>
                 
                 <h3>Role in the Story</h3>
-                <p>As the central character, the protagonist serves as the reader's gateway into this magical world. Their journey from ordinary person to powerful Warden drives the narrative forward.</p>
+                <p>As the central character, the protagonist serves as the reader's gateway into this magical world. Their journey from ordinary person to powerful Warden drives the narrative forward, exploring themes of power, responsibility, and the cost of survival.</p>
             </div>
         </div>
     </div>
@@ -125,7 +147,7 @@
         <div class="wardrobe-modal-content">
             <span class="wardrobe-modal-close" onclick="closeCharacterModal('merlin')">&times;</span>
             <div class="wardrobe-modal-header">
-                <img src="images/character-merlin.jpg" alt="Merlin" class="wardrobe-modal-image">
+                <img src="images/character-merlin.png" alt="Merlin" class="wardrobe-modal-image">
                 <div class="wardrobe-modal-info">
                     <h2>Merlin</h2>
                     <p class="wardrobe-modal-role">Loyal Companion</p>
@@ -133,20 +155,127 @@
             </div>
             <div class="wardrobe-modal-body">
                 <h3>Background</h3>
-                <p>Originally the protagonist's faithful dog, Merlin was transformed during the summoning circle. His frame swelled, his chest blazed white, and his eyes burned pale blue as he gained incredible magical abilities.</p>
+                <p>Originally the protagonist's faithful dog from Avalon Farm, Merlin was transformed during the summoning circle. His frame swelled to horse-size, his chest blazed white, and his eyes burned pale blue as he gained incredible magical abilities while maintaining his loyal nature.</p>
                 
                 <h3>Abilities</h3>
-                <p>Merlin now stands tall as a horse with spectral mist curling around him. His roar can shake chambers, and his magical presence can break summoning circles. Despite his transformation, he remains fiercely loyal to his companion.</p>
+                <p>Can swell to massive size with spectral mist curling around him. His roar can shake chambers and break summoning circles. His magical presence can intimidate enemies and his chest glows with power. Despite his transformation, he remains fiercely loyal and protective of his companion.</p>
+                
+                <h3>Character Development</h3>
+                <p>Has grown from a simple dog to a magical guardian. Shows intelligence and understanding beyond his original nature, recognizing threats and responding to his companion's emotional states. The protagonist protects him from crossing moral lines, showing their deep bond.</p>
                 
                 <h3>Role in the Story</h3>
-                <p>Merlin serves as both protector and guide, using his enhanced abilities to help the protagonist navigate the dangers of the magical realm. His transformation represents the bridge between the ordinary world and the magical one.</p>
+                <p>Merlin serves as both protector and emotional anchor, using his enhanced abilities to help the protagonist navigate the dangers of the magical realm. His transformation represents the bridge between the ordinary world and the magical one, and his loyalty provides the protagonist with unconditional support.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="wardrobe-character-modal-elira" class="wardrobe-character-modal">
+        <div class="wardrobe-modal-content">
+            <span class="wardrobe-modal-close" onclick="closeCharacterModal('elira')">&times;</span>
+            <div class="wardrobe-modal-header">
+                <img src="images/character-elira.png" alt="Elira" class="wardrobe-modal-image">
+                <div class="wardrobe-modal-info">
+                    <h2>Elira</h2>
+                    <p class="wardrobe-modal-role">Herbalist & Guide</p>
+                </div>
+            </div>
+            <div class="wardrobe-modal-body">
+                <h3>Background</h3>
+                <p>A knowledgeable herbalist and trader who wanders the valleys collecting healing plants and selling remedies. She understands the ancient history of the First Weavers and the true nature of relics. Lives under the constant threat of the Caller's oppression but has learned to navigate the dangerous world.</p>
+                
+                <h3>Abilities</h3>
+                <p>Uses shimmering dust as a weapon that can blind enemies. Possesses extensive knowledge of herbs, healing, and ancient history. Understands the nature of relics and their connection to the First Weavers. Skilled in survival and navigation of dangerous territories.</p>
+                
+                <h3>Character Development</h3>
+                <p>Chose to stay with the protagonist despite the danger, recognizing their potential to "tilt the world." She explains that traders like her "walk with nets around our necks every day" and that seeing someone slip the Caller's grip is new and worth supporting.</p>
+                
+                <h3>Role in the Story</h3>
+                <p>Elira serves as both guide and ally, providing crucial knowledge about the world's history and magical systems. Her decision to stay with the group despite the risks shows her recognition of their importance and her willingness to fight against oppression.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="wardrobe-character-modal-caller" class="wardrobe-character-modal">
+        <div class="wardrobe-modal-content">
+            <span class="wardrobe-modal-close" onclick="closeCharacterModal('caller')">&times;</span>
+            <div class="wardrobe-modal-header">
+                <img src="images/character-caller.png" alt="The Caller" class="wardrobe-modal-image">
+                <div class="wardrobe-modal-info">
+                    <h2>The Caller</h2>
+                    <p class="wardrobe-modal-role">Antagonist</p>
+                </div>
+            </div>
+            <div class="wardrobe-modal-body">
+                <h3>Background</h3>
+                <p>A powerful figure who claims to be "the last Weaver" and rules through fear and oppression. He hoards relics while claiming they're dangerous in the wrong hands, yet the relics never bow to him. His scouts systematically hunt those who oppose him, burning resin to mark their presence.</p>
+                
+                <h3>Abilities</h3>
+                <p>Possesses the same magical sight as the protagonist—the ability to see and manipulate the world's underlying balance. However, he uses this power for control and oppression rather than understanding. Can strike down magical beings like Merlin with a word, demonstrating his mastery over magical forces.</p>
+                
+                <h3>Character Development</h3>
+                <p>Represents the corruption of magical power, using ancient abilities to maintain control rather than seeking understanding. His claim to be the "last Weaver" is questioned by Elira, who notes that "power like his doesn't come without roots" and that he didn't make himself.</p>
+                
+                <h3>Role in the Story</h3>
+                <p>The Caller serves as the primary antagonist, representing the oppressive use of magical power. His systematic hunting of the protagonist and his hoarding of relics create the central conflict, while his false claims about being the source of order expose the corruption at the heart of his rule.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="wardrobe-character-modal-tov" class="wardrobe-character-modal">
+        <div class="wardrobe-modal-content">
+            <span class="wardrobe-modal-close" onclick="closeCharacterModal('tov')">&times;</span>
+            <div class="wardrobe-modal-header">
+                <img src="images/character-tov.png" alt="Tov" class="wardrobe-modal-image">
+                <div class="wardrobe-modal-info">
+                    <h2>Tov</h2>
+                    <p class="wardrobe-modal-role">Thief & Informant</p>
+                </div>
+            </div>
+            <div class="wardrobe-modal-body">
+                <h3>Background</h3>
+                <p>A wiry young thief in the bandit camp who befriended the protagonist during their captivity. Claims to be the "best thief in the camp" and "worst cook," making him "indispensable." Despite his criminal background, he shows genuine concern for the protagonist's welfare.</p>
+                
+                <h3>Abilities</h3>
+                <p>Skilled in theft and information gathering. Understands the internal dynamics of the bandit camp and the Caller's system of dues and control. Provides crucial intelligence about the camp's tensions and the broader political situation.</p>
+                
+                <h3>Character Development</h3>
+                <p>Shows loyalty to the protagonist despite the risks, providing information and support during their captivity. His cheerful demeanor masks sharp intelligence and genuine care for others' welfare.</p>
+                
+                <h3>Role in the Story</h3>
+                <p>Tov serves as both informant and ally, providing crucial information about the Caller's system of control and the internal tensions within the bandit camp. His friendship with the protagonist demonstrates that not all criminals are evil, and that alliances can form in unexpected places.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="wardrobe-character-modal-first-weavers" class="wardrobe-character-modal">
+        <div class="wardrobe-modal-content">
+            <span class="wardrobe-modal-close" onclick="closeCharacterModal('first-weavers')">&times;</span>
+            <div class="wardrobe-modal-header">
+                <img src="images/character-first-weavers.png" alt="The First Weavers" class="wardrobe-modal-image">
+                <div class="wardrobe-modal-info">
+                    <h2>The First Weavers</h2>
+                    <p class="wardrobe-modal-role">Ancient Builders</p>
+                </div>
+            </div>
+            <div class="wardrobe-modal-body">
+                <h3>Background</h3>
+                <p>Ancient beings who existed before the Caller's time, before even the First Lords. They "saw the world's bones"—lines of power, patterns of stone, breath of beasts—and thought they could hold them in their hands. Built the temples and created the relics that still exist today.</p>
+                
+                <h3>Abilities</h3>
+                <p>Possessed incredible magical abilities that allowed them to build relics, shape rivers, and speak with storms. Their temples still "hum when the right blood walks their halls," suggesting their power persists in their creations. The relics they made choose when to wake and never bow to the Caller.</p>
+                
+                <h3>Character Development</h3>
+                <p>Their fate is unknown and debated. Some say they succeeded in their ambitions, others say it broke them and scattered them like ash. The Caller claims they were false and that only his line held true sight, but this is questioned by those who understand the ancient power.</p>
+                
+                <h3>Role in the Story</h3>
+                <p>The First Weavers represent the true source of magical power in the world. Their temples and relics provide the protagonist with access to ancient abilities, while their mysterious fate suggests the potential consequences of wielding such power. They serve as both inspiration and warning about the true nature of magic.</p>
             </div>
         </div>
     </div>
 
     <footer class="wardrobe-footer">
         <div class="wardrobe-container">
-            <p>&copy; 2024 Warden of Systems. An epic fantasy serial.</p>
+            <p>&copy; 2025 Warden of Systems. An epic fantasy serial.</p>
         </div>
     </footer>
 

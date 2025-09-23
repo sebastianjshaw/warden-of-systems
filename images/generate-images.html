@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Image Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #1a1a1a;
+            color: white;
+            padding: 20px;
+        }
+        .character-card {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        .character-name {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+            background: rgba(0,0,0,0.7);
+            padding: 5px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        /* The Warden */
+        .warden {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+        }
+        .warden::before {
+            content: "⚔️";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 60px;
+            opacity: 0.8;
+        }
+        
+        /* Merlin */
+        .merlin {
+            background: linear-gradient(135deg, #8b4513, #daa520);
+        }
+        .merlin::before {
+            content: "🐕";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 60px;
+            opacity: 0.8;
+        }
+        
+        /* Elira */
+        .elira {
+            background: linear-gradient(135deg, #228b22, #32cd32);
+        }
+        .elira::before {
+            content: "🌿";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 60px;
+            opacity: 0.8;
+        }
+        
+        /* The Caller */
+        .caller {
+            background: linear-gradient(135deg, #4b0082, #800080);
+        }
+        .caller::before {
+            content: "👑";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 60px;
+            opacity: 0.8;
+        }
+        
+        /* Tov */
+        .tov {
+            background: linear-gradient(135deg, #8b4513, #a0522d);
+        }
+        .tov::before {
+            content: "🗡️";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 60px;
+            opacity: 0.8;
+        }
+        
+        /* First Weavers */
+        .weavers {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+        }
+        .weavers::before {
+            content: "🏛️";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 60px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <h1>Character Image Generator</h1>
+    <p>These are placeholder character images. For photorealistic images, use the prompts in character-prompts.txt with an AI image generation service.</p>
+    
+    <div class="character-card warden">
+        <div class="character-name">The Warden</div>
+    </div>
+    
+    <div class="character-card merlin">
+        <div class="character-name">Merlin</div>
+    </div>
+    
+    <div class="character-card elira">
+        <div class="character-name">Elira</div>
+    </div>
+    
+    <div class="character-card caller">
+        <div class="character-name">The Caller</div>
+    </div>
+    
+    <div class="character-card tov">
+        <div class="character-name">Tov</div>
+    </div>
+    
+    <div class="character-card weavers">
+        <div class="character-name">First Weavers</div>
+    </div>
+    
+    <script>
+        // This page can be used to generate character images
+        // For photorealistic images, use the prompts in character-prompts.txt
+        console.log('Character image generator loaded');
+    </script>
+</body>
+</html>

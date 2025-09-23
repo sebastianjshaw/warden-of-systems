@@ -109,12 +109,16 @@ body {
     align-items: center;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(90deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.7)), url('images/index-header.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .wardrobe-hero-content {
-    flex: 1;
-    padding: 4rem 2rem;
+    flex: 0 0 60%;
+    max-width: 600px;
+    padding: 4rem 2rem 4rem 4rem;
     z-index: 2;
     position: relative;
 }
@@ -124,7 +128,7 @@ body {
     font-size: 4rem;
     font-weight: 700;
     color: #f39c12;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8), 0 0 20px rgba(243, 156, 18, 0.3);
     margin-bottom: 1rem;
     animation: wardrobe-fadeInUp 1s ease-out;
 }
@@ -132,13 +136,15 @@ body {
 .wardrobe-hero-subtitle {
     font-size: 1.5rem;
     color: #ecf0f1;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
     margin-bottom: 2rem;
     animation: wardrobe-fadeInUp 1s ease-out 0.2s both;
 }
 
 .wardrobe-hero-description {
     font-size: 1.2rem;
-    color: #bdc3c7;
+    color: #ecf0f1;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
     margin-bottom: 3rem;
     max-width: 600px;
     animation: wardrobe-fadeInUp 1s ease-out 0.4s both;
@@ -286,6 +292,11 @@ body {
     text-align: center;
     margin-bottom: 4rem;
     color: #2c3e50;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
 }
 
 .wardrobe-features-grid {
@@ -333,9 +344,11 @@ body {
 
 .wardrobe-chapter-preview {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     gap: 3rem;
-    align-items: center;
+    align-items: start;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .wardrobe-chapter-image {
@@ -364,7 +377,7 @@ body {
 
 .wardrobe-chapter-content p {
     margin-bottom: 2rem;
-    color: #bdc3c7;
+    color: #1a1a1a;
     line-height: 1.6;
 }
 
@@ -448,35 +461,48 @@ body {
 
 .wardrobe-chapters-grid {
     display: grid;
-    gap: 3rem;
-    max-width: 1000px;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .wardrobe-chapter-card {
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    gap: 2rem;
+    display: flex;
+    flex-direction: column;
     background: white;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
 }
 
 .wardrobe-chapter-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.wardrobe-chapter-card:hover .wardrobe-chapter-thumb-img {
+    transform: scale(1.05);
 }
 
 .wardrobe-chapter-thumbnail {
     position: relative;
     overflow: hidden;
+    width: 100%;
+    height: 0;
+    padding-bottom: 40%; /* 16:6.4 aspect ratio for landscape */
 }
 
 .wardrobe-chapter-thumb-img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 200px;
+    height: 100%;
     object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
 .wardrobe-chapter-placeholder {
@@ -507,28 +533,36 @@ body {
 }
 
 .wardrobe-chapter-info {
-    padding: 2rem;
+    padding: 2.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .wardrobe-chapter-title {
     font-family: 'Cinzel', serif;
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
     color: #2c3e50;
+    line-height: 1.2;
 }
 
 .wardrobe-chapter-summary {
-    color: #7f8c8d;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
+    color: #5a6c7d;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    flex: 1;
 }
 
 .wardrobe-chapter-meta {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1.5rem;
-    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+    margin-top: auto;
 }
 
 .wardrobe-chapter-date {
@@ -536,10 +570,12 @@ body {
 }
 
 .wardrobe-chapter-status {
-    padding: 0.3rem 0.8rem;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: bold;
+    padding: 0.4rem 1rem;
+    border-radius: 25px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .wardrobe-status-published {
@@ -558,13 +594,18 @@ body {
 
 /* Chapter Reader Styles */
 .wardrobe-chapter-reader {
-    padding: 4rem 0;
-    background: white;
+    padding: calc(100vh - 70px) 0 4rem 0;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    min-height: calc(200vh - 70px);
+    position: relative;
 }
 
 .wardrobe-chapter-header {
     text-align: center;
     margin-bottom: 4rem;
+    position: relative;
+    z-index: 10;
+    padding-top: 2rem;
 }
 
 .wardrobe-chapter-breadcrumb {
@@ -584,8 +625,14 @@ body {
 .wardrobe-chapter-reader-title {
     font-family: 'Cinzel', serif;
     font-size: 3rem;
-    color: #2c3e50;
+    color: #1a1a1a;
     margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    display: inline-block;
 }
 
 .wardrobe-chapter-reader-image {
@@ -597,20 +644,31 @@ body {
 }
 
 .wardrobe-chapter-reader-img {
-    width: 100%;
-    height: 300px;
+    width: 100vw;
+    height: calc(100vh - 70px);
     object-fit: cover;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    z-index: -1;
 }
 
 .wardrobe-chapter-content {
     max-width: 800px;
     margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
 }
 
 .wardrobe-chapter-text {
     font-size: 1.2rem;
     line-height: 1.8;
-    color: #2c3e50;
+    color: #1a1a1a;
 }
 
 .wardrobe-chapter-text p {
@@ -629,6 +687,8 @@ body {
     margin-top: 4rem;
     padding-top: 2rem;
     border-top: 2px solid #ecf0f1;
+    position: relative;
+    z-index: 10;
 }
 
 .wardrobe-chapter-nav-container {
@@ -652,6 +712,38 @@ body {
     opacity: 0.6;
 }
 
+/* Accessibility: Skip Links */
+.wardrobe-skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: #2c3e50;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 4px;
+    z-index: 1000;
+    transition: top 0.3s;
+}
+
+.wardrobe-skip-link:focus {
+    top: 6px;
+}
+
+/* Accessibility: Focus indicators */
+.wardrobe-btn:focus {
+    outline: 3px solid #f39c12;
+    outline-offset: 2px;
+}
+
+.wardrobe-btn-primary:focus {
+    box-shadow: 0 0 0 3px rgba(243, 156, 18, 0.5);
+}
+
+.wardrobe-btn-secondary:focus {
+    box-shadow: 0 0 0 3px rgba(243, 156, 18, 0.3);
+}
+
 /* Characters Styles */
 .wardrobe-characters-list {
     padding: 4rem 0;
@@ -665,12 +757,15 @@ body {
 }
 
 .wardrobe-character-card {
-    background: white;
+    background: transparent;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease;
     cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
 }
 
 .wardrobe-character-card:hover {
@@ -679,14 +774,28 @@ body {
 
 .wardrobe-character-thumbnail {
     position: relative;
-    height: 250px;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%; /* 1:1 Aspect Ratio */
     overflow: hidden;
+    background: transparent;
+    min-height: 200px;
+    max-height: 300px;
+    /* Fallback for browsers that support aspect-ratio */
+    aspect-ratio: 1;
 }
 
 .wardrobe-character-thumb-img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
+    display: block;
+    background: transparent;
+    border-radius: 10px 10px 0 0;
 }
 
 .wardrobe-character-placeholder {
@@ -702,6 +811,8 @@ body {
 
 .wardrobe-character-info {
     padding: 2rem;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
 }
 
 .wardrobe-character-name {
@@ -889,6 +1000,13 @@ body {
     .wardrobe-hero {
         flex-direction: column;
         text-align: center;
+        background-attachment: scroll; /* Better performance on mobile */
+    }
+    
+    .wardrobe-hero-content {
+        flex: 1;
+        max-width: 100%;
+        padding: 2rem 1rem;
     }
     
     .wardrobe-hero-title {
@@ -923,12 +1041,37 @@ body {
         height: 70px;
     }
     
-    .wardrobe-chapter-card {
+    .wardrobe-chapters-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+    
+    .wardrobe-chapter-card {
+        margin-bottom: 1.5rem;
     }
     
     .wardrobe-chapter-thumbnail {
-        height: 200px;
+        padding-bottom: 50%; /* Slightly taller on mobile */
+    }
+    
+    .wardrobe-chapter-info {
+        padding: 2rem;
+    }
+    
+    .wardrobe-chapter-title {
+        font-size: 1.6rem;
+    }
+    
+    .wardrobe-chapter-summary {
+        font-size: 1rem;
+    }
+    
+    .wardrobe-chapter-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
     }
     
     .wardrobe-chapter-nav-container {
@@ -951,7 +1094,28 @@ body {
         gap: 1rem;
     }
     
+    .wardrobe-character-thumbnail {
+        min-height: 150px;
+        max-height: 250px;
+        padding-bottom: 100%; /* Maintain square aspect ratio on mobile */
+    }
+    
     .wardrobe-page-title {
         font-size: 2.5rem;
+    }
+    
+    .wardrobe-section-title {
+        font-size: 2rem;
+        padding: 0.8rem 1.5rem;
+    }
+    
+    .wardrobe-chapter-reader-title {
+        font-size: 2rem;
+        padding: 0.8rem 1.5rem;
+    }
+    
+    .wardrobe-chapter-text {
+        font-size: 1.1rem;
+        padding: 1.5rem;
     }
 }

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Warden Profile Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #1a1a1a;
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .warden-card {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            margin: 20px;
+        }
+        
+        .warden-icon {
+            font-size: 60px;
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+        
+        .warden-name {
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            background: rgba(0,0,0,0.7);
+            padding: 5px 10px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+        }
+        
+        .warden-description {
+            font-size: 10px;
+            text-align: center;
+            margin-top: 5px;
+            opacity: 0.8;
+        }
+        
+        .generate-btn {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px;
+        }
+        
+        .generate-btn:hover {
+            background: #2980b9;
+        }
+        
+        .canvas-container {
+            margin: 20px;
+        }
+        
+        .instructions {
+            background: #2c3e50;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            max-width: 600px;
+            text-align: center;
+        }
+        
+        .prompt-display {
+            background: #34495e;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px;
+            font-family: monospace;
+            font-size: 12px;
+            text-align: left;
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <div class="instructions">
+        <h2>The Warden Profile Picture Generator</h2>
+        <p>Generate a placeholder image for The Warden (protagonist) based on the updated description: bald man in his mid-40s with dark beard, wearing black hoodie, holding Excalibur.</p>
+    </div>
+    
+    <div class="warden-card">
+        <div class="warden-icon">⚔️</div>
+        <div class="warden-name">The Warden</div>
+        <div class="warden-description">Protagonist</div>
+    </div>
+    
+    <button class="generate-btn" onclick="generateWardenImage()">Generate Warden Image</button>
+    
+    <div class="canvas-container">
+        <canvas id="wardenCanvas" width="200" height="200"></canvas>
+    </div>
+    
+    <div class="prompt-display">
+        <h3>AI Generation Prompt:</h3>
+        <p>A photorealistic portrait of a determined man in his mid-40s, wearing practical clothing from a farm background - worn jeans, sturdy boots, and a black hoodie. He is bald with a dark beard and intense, focused eyes that seem to see beyond the ordinary world. In his hand he holds a legendary sword (Excalibur) with an ancient, weathered hilt and a blade that gleams with inner light. His expression shows the weight of responsibility and the moral burden of having killed to protect those he loves. Behind him, subtle threads of golden light weave through the air, representing his ability to see the world's underlying balance. The lighting is dramatic but natural, with a mystical quality that suggests both his ordinary origins and his awakened magical abilities. High fantasy art style, photorealistic, detailed facial features, cinematic lighting.</p>
+        
+        <h3>Alternative Close-up Version:</h3>
+        <p>A photorealistic close-up portrait of a bald man in his mid-40s with a dark beard, wearing a black hoodie. His intense eyes show the weight of responsibility and moral burden. Subtle golden threads of light weave around him. High fantasy, photorealistic, detailed facial features, cinematic lighting.</p>
+    </div>
+    
+    <script>
+        function generateWardenImage() {
+            const canvas = document.getElementById('wardenCanvas');
+            const ctx = canvas.getContext('2d');
+            
+            // Clear canvas
+            ctx.clearRect(0, 0, 200, 200);
+            
+            // Create gradient background
+            const gradient = ctx.createLinearGradient(0, 0, 200, 200);
+            gradient.addColorStop(0, '#2c3e50');
+            gradient.addColorStop(1, '#34495e');
+            
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, 200, 200);
+            
+            // Draw golden threads (magical elements)
+            ctx.strokeStyle = 'rgba(255, 215, 0, 0.3)';
+            ctx.lineWidth = 2;
+            for (let i = 0; i < 5; i++) {
+                ctx.beginPath();
+                ctx.moveTo(Math.random() * 200, Math.random() * 200);
+                ctx.lineTo(Math.random() * 200, Math.random() * 200);
+                ctx.stroke();
+            }
+            
+            // Draw sword icon
+            ctx.font = '60px Arial';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillStyle = 'white';
+            ctx.fillText('⚔️', 100, 80);
+            
+            // Draw name
+            ctx.font = 'bold 14px Arial';
+            ctx.fillStyle = 'white';
+            ctx.fillText('The Warden', 100, 150);
+            
+            // Draw description
+            ctx.font = '10px Arial';
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+            ctx.fillText('Protagonist', 100, 170);
+            
+            // Download image
+            const link = document.createElement('a');
+            link.download = 'character-warden.png';
+            link.href = canvas.toDataURL();
+            link.click();
+            
+            console.log('Generated Warden image');
+        }
+        
+        console.log('Warden profile generator loaded');
+    </script>
+</body>
+</html>

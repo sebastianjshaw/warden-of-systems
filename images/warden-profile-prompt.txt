@@ -1,0 +1,27 @@
+WARDEN PROFILE PICTURE PROMPT
+==============================
+
+A photorealistic portrait of a determined man in his mid-40s, wearing practical clothing from a farm background - worn jeans, sturdy boots, and a black hoodie. He is bald with a dark beard and intense, focused eyes that seem to see beyond the ordinary world. In his hand he holds a legendary sword (Excalibur) with an ancient, weathered hilt and a blade that gleams with inner light. His expression shows the weight of responsibility and the moral burden of having killed to protect those he loves. Behind him, subtle threads of golden light weave through the air, representing his ability to see the world's underlying balance. The lighting is dramatic but natural, with a mystical quality that suggests both his ordinary origins and his awakened magical abilities. High fantasy art style, photorealistic, detailed facial features, cinematic lighting.
+
+SPECIFICATIONS:
+- Resolution: 200x200 pixels (square format)
+- Style: Photorealistic fantasy portrait
+- Focus: Head and shoulders, with sword visible
+- Background: Subtle magical elements, golden threads
+- Lighting: Dramatic but natural, cinematic
+- Expression: Weight of responsibility, moral burden
+- Age: Mid-40s
+- Hair: Bald with dark beard
+- Clothing: Black hoodie, practical farm background
+- Weapon: Excalibur sword with ancient hilt
+- Magical elements: Golden threads of power, inner light
+
+ALTERNATIVE PROMPTS:
+1. Close-up portrait version:
+"A photorealistic close-up portrait of a bald man in his mid-40s with a dark beard, wearing a black hoodie. His intense eyes show the weight of responsibility and moral burden. Subtle golden threads of light weave around him. High fantasy, photorealistic, detailed facial features, cinematic lighting."
+
+2. Action version:
+"A photorealistic portrait of a bald man in his mid-40s with a dark beard, wearing a black hoodie, holding Excalibur sword. Golden threads of power surround him. His expression shows determination and the weight of responsibility. High fantasy, photorealistic, cinematic lighting."
+
+3. Mystical version:
+"A photorealistic portrait of a bald man in his mid-40s with a dark beard, wearing a black hoodie. His eyes glow with inner light as he holds Excalibur. Golden threads of magical power weave through the air around him. High fantasy, photorealistic, mystical lighting."

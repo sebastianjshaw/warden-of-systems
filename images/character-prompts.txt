@@ -1,0 +1,54 @@
+CHARACTER IMAGE GENERATION PROMPTS
+=====================================
+
+1. THE WARDEN (Protagonist)
+A photorealistic portrait of a determined young man in his early 40s, 180cm tall, 100kg weight, wearing practical clothing from a farm background - worn jeans, sturdy boots, and a black hoodie and a black stetson cowboy hat. He is bald with a inch long dark beard and intense, focused eyes that seem to see beyond the ordinary world. In his hand he holds a legendary sword (Excalibur) with an ancient, weathered hilt and a blade that gleams with inner light. His expression shows the weight of responsibility and the moral burden of having killed to protect those he loves. Behind him, subtle threads of golden light weave through the air, representing his ability to see the world's underlying balance. The lighting is dramatic but natural, with a mystical quality that suggests both his ordinary origins and his awakened magical abilities. High fantasy art style, photorealistic, detailed facial features, cinematic lighting.
+Should be square format. 
+- Style: Photorealistic fantasy art
+- Quality: High detail, cinematic lighting
+- Format: PNG or JPG
+- Background: Character-appropriate settings
+- Lighting: Dramatic but natural, with mystical elements where appropriate
+
+2. MERLIN (Loyal Companion)
+A photorealistic image of a magnificent bernedoodle dog (more Bernese Mountain dog than poodle in looks) that has been magically transformed. He appears as a large, powerful canine with fur that shimmers, especially around his chest which glows with inner light. His eyes are intelligent and burn with pale blue fire, showing wisdom beyond that of an ordinary dog. His frame is larger than normal - almost horse-sized - with spectral mist curling around his paws. He stands protectively, ears alert, with an expression of fierce loyalty and ancient power. The background shows subtle magical energy, and his presence radiates both warmth and formidable strength. The image should capture his dual nature as both a beloved pet and a magical guardian. High fantasy, photorealistic animal portrait, mystical lighting, detailed fur texture.
+
+3. ELIRA (Herbalist & Guide)
+A photorealistic portrait of a wise woman in her 30s, with long braided hair and weathered but kind features. She wears practical traveling clothes in earth tones - a patched cloak, sturdy boots, and a basket slung over her shoulder filled with herbs and healing plants. Her hands are stained with plant juices and soil, showing her work with nature. In one hand she holds shimmering dust that glows softly, representing her magical abilities. Her expression is intelligent and compassionate, with eyes that have seen much hardship but retain hope. She stands in a forest setting with ancient trees and glowing plants around her. The lighting is natural but enhanced with subtle magical elements. High fantasy, photorealistic, detailed facial features, natural lighting with mystical touches.
+- Style: Photorealistic fantasy art
+- Quality: High detail, cinematic lighting
+- Format: PNG or JPG
+- Background: Character-appropriate settings
+- Lighting: Dramatic but natural, with mystical elements where appropriate
+
+4. THE CALLER (Antagonist)
+A photorealistic portrait of a imposing figure in his 60s, wearing deep purple robes that seem to absorb light rather than reflect it. His face is stern and calculating, with cold eyes that seem to pierce through reality itself. His hair is dark and neatly trimmed, and his posture exudes authority and menace. In his hands he holds ancient relics that pulse with dark energy, and around him swirl threads of shadow and power that he manipulates with cruel precision. His expression shows both intelligence and corruption, the face of someone who has used great power for oppression rather than good. The background is dark and foreboding, with stone halls and magical symbols. High fantasy, photorealistic, dramatic dark lighting, villainous character design. Should be square format.
+- Style: Photorealistic fantasy art
+- Quality: High detail, cinematic lighting
+- Format: PNG or JPG
+- Background: Character-appropriate settings
+- Lighting: Dramatic but natural, with mystical elements where appropriate
+
+5. TOV (Thief & Informant)
+A photorealistic portrait of a wiry young man in his early 20s, with wild, unkempt hair and a mischievous grin that shows a gap where a tooth should be. He wears patched, mismatched clothing that looks more stitch than fabric, showing his life of poverty and crime. His eyes are sharp and intelligent, darting and calculating, but there's genuine warmth and loyalty in his expression. He has quick, nimble hands and an alert posture that suggests he's always ready to move. His clothing is practical for thievery - dark colors, many pockets, and worn but functional gear. The lighting is dim but warm, suggesting both his criminal background and his good heart. High fantasy, photorealistic, detailed facial features, natural lighting. Should be square format.
+- Style: Photorealistic fantasy art
+- Quality: High detail, cinematic lighting
+- Format: PNG or JPG
+- Background: Character-appropriate settings
+- Lighting: Dramatic but natural, with mystical elements where appropriate
+
+6. THE FIRST WEAVERS (Ancient Builders)
+A photorealistic image of ancient, ethereal beings who appear as tall, majestic figures with elongated forms and skin that seems to shimmer with starlight. They wear flowing robes that seem to be made of woven light and shadow, and their hands are long and elegant, capable of shaping reality itself. Their faces are wise and ancient, with eyes that hold the knowledge of ages. Around them float symbols of power - geometric patterns, threads of light, and fragments of reality being woven together. They stand in a vast, otherworldly space filled with floating temples, rivers of light, and storms of pure energy. The image should convey their incredible age, wisdom, and power, as well as their mysterious fate. High fantasy, photorealistic, ethereal lighting, ancient mystical beings. Should be square format. 
+- Style: Photorealistic fantasy art
+- Quality: High detail, cinematic lighting
+- Format: PNG or JPG
+- Background: Character-appropriate settings
+- Lighting: Dramatic but natural, with mystical elements where appropriate
+
+TECHNICAL SPECIFICATIONS:
+- Resolution: 200x200 pixels (square format)
+- Style: Photorealistic fantasy art
+- Quality: High detail, cinematic lighting
+- Format: PNG or JPG
+- Background: Character-appropriate settings
+- Lighting: Dramatic but natural, with mystical elements where appropriate
