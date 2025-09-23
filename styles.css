@@ -1030,6 +1030,25 @@ body {
     
     .wardrobe-chapter-preview {
         grid-template-columns: 1fr;
+        gap: 2rem;
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+    
+    .wardrobe-chapter-content {
+        padding: 1.5rem;
+    }
+    
+    .wardrobe-chapter-content h3 {
+        font-size: 1.6rem;
+    }
+    
+    .wardrobe-chapter-content p {
+        font-size: 1rem;
+    }
+    
+    .wardrobe-chapter-img {
+        height: 200px;
     }
     
     .wardrobe-features-grid {
