@@ -441,10 +441,15 @@ body {
 }
 
 /* Page Headers */
-.wardrobe-chapters-header,
+.wardrobe-chapters-header{
+    padding: 8rem 0 4rem;
+    background: linear-gradient(90deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.7)), url('images/chapters-header.png');
+    color: white;
+    text-align: center;
+}
 .wardrobe-characters-header {
     padding: 8rem 0 4rem;
-    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    background: linear-gradient(90deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.7)), url('images/characters-header.png');
     color: white;
     text-align: center;
 }
