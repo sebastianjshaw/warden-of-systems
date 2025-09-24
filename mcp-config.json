@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "warden-of-systems": {
+      "command": "node",
+      "args": ["mcp-server.js"],
+      "cwd": "/Users/Sebastian.Shaw/Documents/Code/warden-of-systems",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  }
+}

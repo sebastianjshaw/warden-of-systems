@@ -1,0 +1,42 @@
+{
+  "name": "warden-of-systems",
+  "version": "1.0.0",
+  "description": "Warden of Systems - Epic Fantasy Serial Website with MCP Server",
+  "main": "mcp-server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node mcp-server.js",
+    "dev": "node --watch mcp-server.js",
+    "deploy": "./deploy.sh",
+    "deploy:netlify": "netlify deploy --prod --dir .",
+    "deploy:vercel": "vercel --prod",
+    "test": "node test-mcp.js",
+    "build": "echo 'Static site - no build needed'"
+  },
+  "keywords": [
+    "fantasy",
+    "serial",
+    "warden-of-systems",
+    "mcp",
+    "model-context-protocol",
+    "static-site",
+    "netlify"
+  ],
+  "author": "Sebastian Shaw",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0"
+  },
+  "devDependencies": {
+    "netlify-cli": "^17.0.0",
+    "vercel": "^33.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sebastianjshaw/warden-of-systems.git"
+  },
+  "homepage": "https://warden-of-systems.netlify.app"
+}
