@@ -1,18 +1,8 @@
 [build]
-  # No build command needed - static site
-  command = "echo 'Static site - no build needed'"
   publish = "."
+  command = "echo 'Static site deployment'"
 
-[build.environment]
-  NODE_VERSION = "18"
-
-# Redirect rules for SPA-like behavior
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-
-# Headers for security and performance
+# Security headers
 [[headers]]
   for = "/*"
   [headers.values]
@@ -25,20 +15,14 @@
 [[headers]]
   for = "/images/*"
   [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+    Cache-Control = "public, max-age=31536000"
 
 [[headers]]
   for = "/*.css"
   [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+    Cache-Control = "public, max-age=31536000"
 
 [[headers]]
   for = "/*.js"
   [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-# Enable compression
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Content-Encoding = "gzip"
+    Cache-Control = "public, max-age=31536000"
