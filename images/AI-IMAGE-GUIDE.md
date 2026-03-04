@@ -35,7 +35,7 @@
 ## Character-Specific Tips
 
 ### The Warden (Protagonist)
-- **Key Elements**: Farm background, Excalibur sword, golden threads
+- **Key Elements**: Farm background, Caliburn sword, golden threads
 - **Style**: Realistic fantasy, cinematic lighting
 - **Focus**: Weight of responsibility, moral burden
 

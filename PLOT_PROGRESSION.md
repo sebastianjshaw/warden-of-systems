@@ -69,7 +69,7 @@
 - **Chapter 26**: Tenth day, afternoon, climbing out of the ravine
 - **Chapter 27**: Tenth day, evening, entering the High Forest
 - **Chapter 28**: Eleventh day, night, camping at the ancient temple
-- **Chapter 29**: Twelfth day, morning, finding Excalibur
+- **Chapter 29**: Twelfth day, morning, finding Caliburn
 - **Chapter 30**: Twelfth day, evening, learning about relics
 - **Chapter 31**: Thirteenth day, resting among ruins
 - **Chapter 32**: Fourteenth day, night, the Caller's scouts approach
@@ -104,7 +104,7 @@
 - **Development**: Becoming more capable, forming first alliance
 
 #### **Phase 3: Discovery and Power (Days 10-15)**
-- **Key Moments**: Finding Excalibur, learning about relics, magical awakening
+- **Key Moments**: Finding Caliburn, learning about relics, magical awakening
 - **Character Traits**: Discovering hidden abilities, moral complexity
 - **Development**: Crossing the line from survivor to killer
 
@@ -146,7 +146,7 @@
 #### **Ancient History**
 - **First Weavers**: Ancient beings who "saw the world's bones" and tried to hold power
 - **Ancient Temples**: Built before the Caller's time, older than any throne
-- **Relics**: Ancient artifacts that choose their wielders (Excalibur)
+- **Relics**: Ancient artifacts that choose their wielders (Caliburn)
 - **Multiple Theories**: Different stories about what happened to the First Weavers
 
 #### **Current Power Structure**
@@ -201,7 +201,7 @@
 - **Expansion**: Add more about the Seven Kingdoms, the Caller's rise, ancient resistance
 
 #### **Method 2: Through Ancient Ruins & Artifacts** ✅ **Already Established**
-- **Current**: Temples with carvings, Excalibur as a relic
+- **Current**: Temples with carvings, Caliburn as a relic
 - **Expansion**: Discover ancient libraries, memorial stones, vision-triggering artifacts
 
 #### **Method 3: Through The Caller's Revelations** ✅ **Already Established**

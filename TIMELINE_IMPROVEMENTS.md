@@ -39,7 +39,7 @@
 - **Chapter 26**: Tenth day, afternoon, climbing out of the ravine
 - **Chapter 27**: Tenth day, evening, entering the High Forest
 - **Chapter 28**: Eleventh day, night, camping at the ancient temple
-- **Chapter 29**: Twelfth day, morning, finding Excalibur
+- **Chapter 29**: Twelfth day, morning, finding Caliburn
 - **Chapter 30**: Twelfth day, evening, learning about relics
 - **Chapter 31**: Thirteenth day, resting among ruins
 - **Chapter 32**: Fourteenth day, night, the Caller's scouts approach

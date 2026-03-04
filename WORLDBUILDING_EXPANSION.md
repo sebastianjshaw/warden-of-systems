@@ -7,7 +7,7 @@
 #### **1. Ancient History**
 - **First Weavers**: Ancient beings who "saw the world's bones" and tried to hold power
 - **Ancient Temples**: Built before the Caller's time, older than any throne
-- **Relics**: Ancient artifacts that choose their wielders (Excalibur)
+- **Relics**: Ancient artifacts that choose their wielders (Caliburn)
 - **Multiple Theories**: Different stories about what happened to the First Weavers
 
 #### **2. Current Power Structure**
@@ -87,7 +87,7 @@
 
 #### **Current Usage**: ✅ Already established
 - Ancient temples with carvings and symbols
-- Excalibur as a relic with history
+- Caliburn as a relic with history
 - Ruins that "hum when the right blood walks their halls"
 
 #### **Expansion Opportunities**:
@@ -99,7 +99,7 @@
 - Maps showing the realm's ancient borders
 
 **Relic Interactions**:
-- Excalibur could reveal more about its history
+- Caliburn could reveal more about its history
 - Other relics could be found with different stories
 - Relics could show visions of their creation
 ```

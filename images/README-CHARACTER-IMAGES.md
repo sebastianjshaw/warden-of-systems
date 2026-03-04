@@ -28,7 +28,7 @@ Create images using:
 ### 1. The Warden (Protagonist)
 - **Age**: Late 20s
 - **Appearance**: Farm background, practical clothing, intense focused eyes
-- **Key Elements**: Holds Excalibur, sees golden threads of power
+- **Key Elements**: Holds Caliburn, sees golden threads of power
 - **Expression**: Weight of responsibility, moral burden
 
 ### 2. Merlin (Loyal Companion)
