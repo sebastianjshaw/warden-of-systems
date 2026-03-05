@@ -30,7 +30,7 @@
 - **Chapter 19**: Eighth day, morning, making camp in the wilderness
 - **Chapter 20**: Eighth day, afternoon, discovering we're not alone
 - **Chapter 21**: Eighth day, evening, first successful hunt
-- **Chapter 22**: Ninth day, morning, meeting Elira
+- **Chapter 22**: Ninth day, morning, meeting the stranger
 - **Chapter 23**: Ninth day, afternoon, sharing food and stories
 - **Chapter 24**: Ninth day, evening, learning about the world
 
@@ -112,7 +112,7 @@
 
 #### **Examples:**
 - `— Second day, emerging from the tunnels —`
-- `— Ninth day, morning, meeting Elira —`
+- `— Ninth day, morning, meeting the stranger —`
 - `— Fifteenth day, night, crossing the line —`
 
 ### **🔍 Consistency Check:**
